@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: tensquare-base     #定义微服务的名称，不能使用下划线
+  rabbitmq:              #配置rabbitmq
+    host: 192.168.25.128
   datasource:                #配置数据源
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.25.133:3306/tensquare_base?characterEncoding=UTF-8
